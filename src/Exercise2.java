@@ -78,16 +78,17 @@ class BookCollection{
         System.out.println("Book added: " + book);
     }
     //Method to Remove a Book by isbn
-    public void removeBookByIsbn(String isbn){
+    public void removeBookByIsbn(String isbn) {
         for (Book2 book : books) {
-            if(book.getIsbn().equals(isbn)){
+            if (book.getIsbn().equals(isbn)) {
                 books.remove(book);
                 System.out.println("Book removed: " + book);
                 return;
             }
         }
-        System.out.println("Book not found with ISBN: " + isbn);
-    }
+            System.out.println("Book not found with ISBN: " + isbn);
+        }
+
     //Method to Display all Books
     public void displayBooks(){
         if(books.isEmpty()){
